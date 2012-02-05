@@ -7,4 +7,4 @@ branches:
   only:
     - master
     
-script: "bundle exec rake -f test/dummy/Rakefile db:reset db:test:prepare"
+script: "bundle exec rake -f test/dummy/Rakefile db:test:load db:test:prepare && bundle exec rake test"
