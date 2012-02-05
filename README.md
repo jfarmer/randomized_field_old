@@ -51,6 +51,8 @@ Like I said: simple.
 
     rails server
 	
+	User.find_by_random_id(params[:random_id])
+	
 ## Bugs
 
 Please report them on the [Github issue
