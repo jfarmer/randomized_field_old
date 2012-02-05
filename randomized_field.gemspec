@@ -17,7 +17,7 @@ randomly-generated string.  This is useful for generating one-off tokens or crea
 non-incrementing unique ID.  See the project page for example uses.
 EOM
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_development_dependency "sqlite3"
