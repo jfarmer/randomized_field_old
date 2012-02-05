@@ -11,11 +11,11 @@ large our database is, or to create an unguessable (and perhaps temporary) token
 things like password resets, etc.
 
 You might use RandomizedField to generate:
+
 * Order numbers, return authorization numbers, etc. for an e-commerce system
 * Unique referral IDs or invitation tokens for each user of your site
 * Tokens for password reset emails
-* Temporary tokens embedded in an email that automatically log users in
-* 
+* Temporary tokens embedded in an email that automatically log users in 
 
 ## Features
 
