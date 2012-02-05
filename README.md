@@ -57,7 +57,7 @@ Like I said: simple.
 ## Bugs
 
 Please report them on the [Github issue
-tracker](http://github.com/jfarmer/randomized_field_/issues) for this project.
+tracker](http://github.com/jfarmer/randomized_field/issues) for this project.
 
 If you have a bug to report, please include the following information:
 
