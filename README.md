@@ -1,6 +1,6 @@
 # RandomizedField
 
-[![Build Status](http://travis-ci.org/jfarmer/randomized_field.png)](http://travis-ci.org/jfarmer/randomized_field)
+[![Build Status](https://secure.travis-ci.org/jfarmer/randomized_field.png)](http://travis-ci.org/jfarmer/randomized_field)
 
 RandomizedField is a simple plugin for ActiveRecord that populates a field with a unique,
 randomly-generated string.  This is useful for generating one-off tokens or creating a
