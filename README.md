@@ -26,7 +26,7 @@ prefix to prepend to the string (if any).
 Like I said: simple.
 
 ## Rails Quickstart
-	```ruby
+```ruby
     gem install randomized_field
 
     rails new my_app
@@ -52,7 +52,7 @@ Like I said: simple.
     rails server
 	
 	User.find_by_random_id(params[:random_id])
-	```
+```
 	
 ## Bugs
 
