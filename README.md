@@ -26,32 +26,32 @@ prefix to prepend to the string (if any).
 Like I said: simple.
 
 ## Rails Quickstart
+```text
+gem install randomized_field
+
+rails new my_app
+
+cd my_app
+
+gem "randomized_field"
+
+rails generate scaffold user name:string random_id:string
+
+# edit db/migrate/*_create_users.rb
+add_index :users, :random_id, :unique => true
+
+rake db:migrate
+```
+
 ```ruby
-    gem install randomized_field
+# edit app/models/user.rb
+class User < ActiveRecord::Base
+  randomized_field :random_id, :length => 6, :prefix => 'U'
+end
 
-    rails new my_app
+User.create! name: "Joe Schmoe"
 
-    cd my_app
-
-    gem "randomized_field"
-
-    rails generate scaffold user name:string random_id:string
-
-    # edit db/migrate/*_create_users.rb
-    add_index :users, :random_id, :unique => true
-
-    rake db:migrate
-
-    # edit app/models/user.rb
-    class User < ActiveRecord::Base
-	  randomized_field :random_id, :length => 6, :prefix => 'U'
-    end
-
-    User.create! name: "Joe Schmoe"
-
-    rails server
-	
-	User.find_by_random_id(params[:random_id])
+User.find_by_random_id(params[:random_id])
 ```
 	
 ## Bugs
@@ -69,7 +69,7 @@ If you have a bug to report, please include the following information:
 
 ## License
 
-	Copyright (c) 2012 Jesse Farmer, released under the MIT license
+	Copyright (c) 2012-2013 Jesse Farmer, released under the MIT license
 	
 	Permission is hereby granted, free of charge, to any person obtaining
 	a copy of this software and associated documentation files (the
